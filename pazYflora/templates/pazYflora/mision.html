@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- INICIO NAVBAR -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light ">
+        
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'img/logo.png' %}" alt="" class="logo-img">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse elementos-nav" id="navbarSupportedContent" >
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'index' %}"  >Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'mision' %}">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'galeria' %}">Productos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- FIN DE NAVBAR  -->
+
+
+    
+    <div class="container " style="padding: 3rem 1rem ; text-align: justify;">
+        <div class="mision " style="padding: 0 0 2rem 0;">
+            <p class="h2">
+                Nuestra Misión
+            </p>
+            
+            <div class="col-12 " style="padding: 0; margin: 0; text-align:justify ; line-height: 1.5rem;font-size: 1.25rem;">
+                Nuestra misión es proporcionar a nuestros clientes los mejores productos y servicios para que puedan crear y mantener jardines saludables y hermosos. Nos esforzamos por ofrecer una amplia variedad de plantas, herramientas de jardín, suministros y accesorios de alta calidad, al mismo tiempo que brindamos asesoramiento y atención al cliente excepcionales. Nos enorgullece ayudar a nuestros clientes a encontrar soluciones a cualquier desafío de jardinería que puedan enfrentar y estamos comprometidos con la preservación del medio ambiente a través de prácticas sostenibles y ecológicas en nuestra operación de negocio.
+            </div>
+        </div>
+
+        <div class="organizacion-sin-lucro ">
+            <p class="h2">En Colaboración con fundación "EcoVida"</p>
+            <p class="h5">Comprando tus productos en Paz&Flora estarás ayudando directamente a EcoVida, una fundación sin fines de lucro enfocada en la conservasión del medio ambiente. Algunos de los objetivos de EcoVida son los siguientes:</p>
+            <p>1. Educación ambiental: Educar al público sobre los problemas ambientales y cómo pueden tomar medidas para proteger el medio ambiente.</p>
+            <p>2. Desarrollo Sostenible: promover el desarrollo sostenible, lo que significa el uso de los recursos naturales de manera responsable y equitativa para satisfacer las necesidades actuales sin comprometer las necesidades de las generaciones futuras.</p> 
+            <p>3. Investigación Científica: financiar y llevar a cabo investigaciones científicas sobre los problemas ambientales y el cambio climático para obtener datos y pruebas para apoyar la toma de decisiones informadas.</p> 
+        </div>
+                    
+        <p class="h3">¿Cómo hacer y planificar un Jardín desde el inicio? </p>
+        <iframe style="width: 100%; max-width: 40rem; height: 20rem;" src="https://www.youtube.com/embed/ZHwSjSOUxtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+    
+    
+    
+    <!-- INICIO FOOTER -->
+<div class="container-fluid text-center" style="background: rgb(122,168,116);padding: 0; margin-top: 3rem;" >
+    
+        
+    <a class="navbar-brand link" href="index.html" style="border: 0px solid black; margin: 0;">
+        <img src="img/logo.png" alt="" class="logo-img">
+        </a>
+        
+        <div class="container-fluid text-center " style="padding: 0rem 0rem 1rem 0rem">
+            <a href="" class="link">
+                <img class="logo-footer" src="{% static 'img/icon-facebook.png' %}" alt="">
+            </a>
+            
+            <a href="" class="link">
+                <img class="logo-footer" src="{% static 'img/icon-instagram.png' %}" alt="">
+            </a>
+            
+            <a href="" class="link">
+                <img class="logo-footer" src="{% static 'img/icon-whatsapp.png' %}" alt="">
+            </a>
+            
+           
+
+            <div class="footer row " style=" width: auto; margin: 1rem auto;">
+                <div class="col-12 text-center" >
+                    <a href="index.html" class="link footer-text">INICIO</a>
+                </div>
+                        
+                <div class="col-12 ">
+                    <a href="galeria.html" class="link footer-text">PRODUCTOS</a>
+                </div>
+                    
+                <div class="col-12 ">
+                    <a href="mision.html" class="link footer-text">NOSOTROS</a>
+                </div>
+                
+                <div class="col-12 ">
+                    <a href="index.html" class="link footer-text">CONTACTO</a>
+                </div>
+                
+                <div class="col-12 ">
+                    <a href="index.html" class="link  footer-text">UBICACION</a>
+                </div>
+            </div>
+            <p class="m-0 copyright-text">Copyright © 2023 Paz&Flora - All rights reserved.</p>
+        </div>
+    </div>
+    <!-- FIN FOOTER-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    
+</body>
+</html>

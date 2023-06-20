@@ -1,0 +1,63 @@
+{
+  "productos": [
+    {
+      "Id": 1,
+      "title": "VILMORIN",
+      "descripcion": "Semillas de Reina Luisa Enana",
+      "precio": 1990,
+      "imgURL": "img/img-grid-1.webp"
+    },
+    {
+      "Id": 2,
+      "title": "FISKARS",
+      "descripcion": "Pala Manual para Jardín 200S",
+      "precio": 5990,
+      "imgURL": "img/img-grid-5.webp"
+    },
+    {
+      "Id": 3,
+      "title": "ANASAC",
+      "descripcion": "Fertilizante para Rosas",
+      "precio": 3990,
+      "imgURL": "img/img-grid-3.webp"
+    },
+    {
+      "Id": 4,
+      "title": "ANASAC",
+      "descripcion": "Fertilizante Verde",
+      "precio": 2990,
+      "imgURL": "img/img-grid-6.webp"
+    },
+    {
+      "Id": 5,
+      "title": "DECOGREEN",
+      "descripcion": "Macetero Biodegradable Clasica Rojo",
+      "precio": 4790,
+      "imgURL": "img/img-grid-2.webp"
+    },
+    {
+      "Id": 6,
+      "title": "FISKARS",
+      "descripcion": "Organizador de Herramientas Ajustable",
+      "precio": 19990,
+      "imgURL": "img/img-grid-4.webp"
+    },
+    {
+      "Id": 7,
+      "title": "GILMOUR",
+      "descripcion": "Pistola de Riego Giratoria 8 Funciones",
+      "precio": 16990,
+      "imgURL": "img/img-grid-7.webp"
+    },
+    {
+      "Id": 8,
+      "title": "LIOI",
+      "descripcion": "Guante jardineria - Flex Light color negro",
+      "precio": 990,
+      "imgURL": "img/img-grid-8.webp"
+    }
+  ],
+  "usuarios": [
+   
+  ]
+}

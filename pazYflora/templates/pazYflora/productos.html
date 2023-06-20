@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <title>Vehiculos</title>
+</head>
+<body>
+    <div class="container">
+        <h2> Vehiculos </h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Codigo ID</th>
+                    <th>Marca</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Imagen</th>
+                    <th>Eliminar</th>
+                    <th>Modificar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for producto in productos%}
+                <tr>
+                    <td>{{ producto.codigoID }}</td>
+                    <td>{{ producto.marca }}</td>
+                    <td>{{ producto.descripcion }}</td>
+                    <td>{{ producto.precio }}</td>
+                    <td>{{ producto.stock }}</td>
+                    {% if producto.imagen  %}
+                    <td>
+                        <img src="{{ producto.imagen.url }}" style="height: 50px; width: 50px;">
+                    </td>
+                    {% else %}
+                    <td>
+                        <p style="color:red">No tiene foto</p>
+                    </td>
+                    {% endif %}
+                    <td><a href="{% url 'eliminar' producto.codigoID %}" class="btn btn-danger">Eliminar</td>
+                    <td><a href="{% url 'modificar' producto.codigoID %}" class="btn btn-warning">Modificar</td>                        
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+
+        <a href="{% url 'crear'%}" class="btn btn-success">Crear vehiculo</a> 
+    </div>
+
+
+    
+</body>
+</html>

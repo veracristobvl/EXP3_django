@@ -1,0 +1,304 @@
+body * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAV STYLES */
+
+.elementos-nav{
+    /* border-bottom: 1px solid black; */
+}
+.nav-item a{
+    border-bottom: 1px solid black;
+
+}
+.logo-img{
+    width: 6rem;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+
+/* HERO SECTION*/
+.hero-section{
+    height: 100vh;
+    background-image: url("../img/cover-img.jpg");
+    background-size: 100% 100%;
+}
+.hero-text{
+    font-family: 'Titillium Web', sans-serif;
+    color: white; 
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 1rem;
+    font-weight: light;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.span-text p{
+    color: #ffffff;
+    font-size: 1.75rem;
+    letter-spacing: 0;
+    font-style: oblique;
+    font-weight: 100;   
+    padding: 0 2rem;
+}
+.span-button{
+    border: 1px solid black;
+    padding: 1rem
+}
+.span-button a{
+    color:#EDF1D6;
+    letter-spacing: 0;
+    font-size: 1.25rem;
+}
+
+
+/*  INFORMATION SECTION */
+
+.info{
+    margin: 2rem auto;
+}
+.info-titulo{
+    border-bottom:1px solid black
+}
+.link:link { text-decoration: none; }
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+}
+
+.carrusel-text{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2rem; 
+}
+
+.info{
+    font-family: 'Titillium Web', sans-serif;
+}
+/* 
+.carousel-item{
+    display: flex;
+    flex-direction: row;
+} */
+.carrusel-img{
+    width: 10rem    ;
+    /* width: 10vw; */
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.logo-footer{
+    width: 2.25rem;
+    height: auto;
+    margin: 0 1rem;
+}
+
+.lista-footer{
+    list-style: none;
+    align-items: center;
+}
+
+.footer-text{
+    font-family: 'Titillium Web', sans-serif;
+    color: beige;
+    font-weight: bold;
+    padding: 1rem 0s;
+    font-size: 1rem;
+}
+
+.copyright-text{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    font-weight: light;
+    letter-spacing: 1px;
+    font-style:oblique;
+}
+
+
+
+/* FORMULARIO */
+
+#formulario{
+    margin: 0;
+    /* margin-bottom: 10rem; */
+    padding: 0 2rem 2rem 2rem;
+    width: 75%;
+    max-width: 30rem;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: 0px solid rgb(221, 213, 213);
+    /* background-color: aqua; */
+    box-shadow:  25px 25px 28px -20px rgb(82, 116, 73);
+    border-radius: 10px;
+    background-color: rgb(239, 246, 240) ;
+    border-right: 1px solid rgb(31, 116, 41);
+    border-bottom: 1px solid rgb(31, 116, 41);
+
+    /* color: white; */
+}
+
+.img-div{
+    width: 25%;
+    border: 0px solid black;
+    height: fit-content;
+    
+}
+.img-div img{
+    width: 100%;
+}
+.form-main-div{
+    /* padding: 2rem; */
+    border: 0px solid black;
+    width: 100%;
+    height:fit-content;
+    /* display: flex; */
+    }
+.form-text-div{
+    
+}
+.form-title-text{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.form-text{
+    font-size: 1rem;
+}
+.form-text-span{
+    color: inherit;
+    text-decoration: none;
+    color: rgb(122,168,116);
+    font-weight: bold;
+}
+.form-inputs-div div{
+    padding: 0.5rem 0 ;
+}
+.form-inputs-div form div label{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* padding-bottom: 1rem; */
+}
+.valid{
+    border: 1px solid green !important;
+}
+label.error{
+    color: red !important;
+}
+input.error{
+    border: solid 1px red !important;
+}
+
+.form-inputs-div form div input, .fechaNac-div{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 3px solid rgb(172, 172, 172);
+    
+
+}
+.fechaNac-div{
+    /* width: 70% !important; */
+    display: flex;
+    width: fit-content;
+    padding: 5rem 0 ;
+}
+.fecha-nac-div-interior{
+    border: none !important;
+    background: transparent;
+    padding: 0!important;
+    margin: 0 !important;
+    text-align: center;
+    max-width: 3rem;
+    -moz-appearance: textfield;
+}
+
+input[type=number] {
+   
+  }
+.fecha-nac-div-interior::placeholder{
+    text-align: center;
+}
+.form-inputs-div form div input:focus{
+    /* border-color:  */
+    border: 4px solid rgb(122,168,116);
+
+    outline: 1;
+    outline: thin dotted \9;
+}
+input[type="submit"]{
+    background: #ffffff;
+    color: inherit;
+    border: 2px solid rgb(122,168,116);
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.75rem;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+}
+.password-requirements{
+    width: 100%;
+
+}
+
+.password-requirements li{
+    display: inline-block;
+    width: 40%;
+}
+
+.password-requirements li span{
+    font-size: 1.25rem;
+    height: fit-content;
+    color: red;
+
+}
+
+.div-prueba{
+    width: 1rem !important;
+    height: 1rem !important;
+    border-radius: 50%;
+    background-color: black;
+}
+/* 
+.password-requirements{
+    list-style: none;
+}
+.password-requirements li ::before{
+    content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+} */
