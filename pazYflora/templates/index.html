@@ -24,33 +24,7 @@
 
 <body>
 
-    <!-- INICIO NAVBAR -->
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light ">
-        
-        <a class="navbar-brand" href="{% url 'index' %}">
-            <img src="{% static 'img/logo.png' %}" alt="" class="logo-img">
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse elementos-nav" id="navbarSupportedContent" >
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'index' %}"  >Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'mision' %}">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'galeria' %}">Productos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- FIN DE NAVBAR  -->
-
+    {% include "navbar.html" %}
 
 
     <!-- INICIO SECCION PRINCIPAL -->
@@ -64,7 +38,7 @@
                 <p>Soluciones & Productos para tu Jardín</p>
             </span>
             <span class="span-button btn" >
-                <a  href="galeria.html" class="m-0">Productos</a>
+                <a  href="{% url 'galeria' %}" class="m-0">Productos</a>
             </span>
         </div>
     </div>
@@ -147,15 +121,15 @@
     
 
 
-
-    <!-- FORMULARIO -->
+<!-- 
+    <!-- FORMULARIO 
     <div  class="container p-auto d-flex">
 
-        <!-- IMAGEN LOGO  -->
+        <!-- IMAGEN LOGO  
         
-        <!-- DIV PADRE DE FORMULARIO -->
+        <!-- DIV PADRE DE FORMULARIO
         <div class="form-main-div m-auto" id="formulario" >
-            <!-- DIV TITULO Y TEXTO --> 
+            <!-- DIV TITULO Y TEXTO  
             <div class="img-div">
                 <img src="img/logo.png" alt="">
             </div> 
@@ -165,7 +139,7 @@
                 <p class="form-text">Registrándote en Paz&Flora podrás optar a descuentos exclusivos, además de mantenerte al tanto de noticias y ofertas! Ya tienes una cuenta? <a class="form-text-span" href="">Inicia sesión</a></p>
             </div>
         
-            <!-- DIV DE INPUTS -->
+            <!-- DIV DE INPUTS 
             <div class="form-inputs-div">
                 <form action="" id="formulario-validate">
                 
@@ -187,7 +161,7 @@
                         
                         <input type="email" id="femail" name="femail" required>
                     </div>
-                    <!-- style="width: 30%;" -->
+                    <!-- style="width: 30%;" 
                     <div >
                         
                         <label for="">Fecha de Nacimiento</label>
@@ -199,7 +173,7 @@
                             <input  onfocus="bordeVerde()" onkeyup="fechaNacCheck()" class="fecha-nac-div-interior" placeholder="YYYY" type="number" id="ffechaNac2-yyyy" name="ffechaNac"  style="display: inline-block; ">
                         </div>
                         
-                        <!-- <input type="date" id="ffechaNac" name="ffechaNac" required> -->
+                        <!-- <input type="date" id="ffechaNac" name="ffechaNac" required> 
                     </div>
                     
                     <div>
@@ -230,59 +204,13 @@
         
     
     </div>
+     -->
+
+
+  <!-- INICIO FOOTER -->
     
-
-
-   
-<!-- INICIO FOOTER -->
-<div class="container-fluid text-center" style="background: rgb(122,168,116);padding: 0; margin-top: 3rem;" >
-    
-        
-    <a class="navbar-brand link" href="index.html" style="border: 0px solid black; margin: 0;">
-        <img src="img/logo.png" alt="" class="logo-img">
-        </a>
-        
-        <div class="container-fluid text-center " style="padding: 0rem 0rem 1rem 0rem">
-            <a href="" class="link">
-                <img class="logo-footer" src="{% static 'img/icon-facebook.png' %}" alt="">
-            </a>
-            
-            <a href="" class="link">
-                <img class="logo-footer" src="{% static 'img/icon-instagram.png' %}" alt="">
-            </a>
-            
-            <a href="" class="link">
-                <img class="logo-footer" src="{% static 'img/icon-whatsapp.png' %}" alt="">
-            </a>
-            
-           
-
-            <div class="footer row " style=" width: auto; margin: 1rem auto;">
-                <div class="col-12 text-center" >
-                    <a href="index.html" class="link footer-text">INICIO</a>
-                </div>
-                        
-                <div class="col-12 ">
-                    <a href="galeria.html" class="link footer-text">PRODUCTOS</a>
-                </div>
-                    
-                <div class="col-12 ">
-                    <a href="mision.html" class="link footer-text">NOSOTROS</a>
-                </div>
-                
-                <div class="col-12 ">
-                    <a href="index.html" class="link footer-text">CONTACTO</a>
-                </div>
-                
-                <div class="col-12 ">
-                    <a href="index.html" class="link  footer-text">UBICACION</a>
-                </div>
-            </div>
-            <p class="m-0 copyright-text">Copyright © 2023 Paz&Flora - All rights reserved.</p>
-        </div>
-    </div>
-    <!-- FIN FOOTER-->
-
+  {% include "footer.html"%}
+  <!-- FIN FOOTER-->
         
 
   

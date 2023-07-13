@@ -1,3 +1,7 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
 body * {
     margin: 0;
     padding: 0;
@@ -141,7 +145,7 @@ body * {
 #formulario{
     margin: 0;
     /* margin-bottom: 10rem; */
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem;
     width: 75%;
     max-width: 30rem;
     /* height: 100vh; */

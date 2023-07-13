@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    
+    <script src="{% static 'JavaScript/validate.js' %}"></script>
+    <script src="{% static 'JavaScript/main.js' %}"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid text-center " style="background: rgb(122,168,116);padding: 0; margin-top: auto; " >
+    
+        
+        <a class="navbar-brand link" href="index.html" style="border: 0px solid black; margin: 0;">
+            <img src="img/logo.png" alt="" class="logo-img">
+            </a>
+            
+            <div class="container-fluid text-center " style="padding: 0rem 0rem 1rem 0rem">
+                <a href="" class="link">
+                    <img class="logo-footer" src="{% static 'img/icon-facebook.png' %}" alt="">
+                </a>
+                
+                <a href="" class="link">
+                    <img class="logo-footer" src="{% static 'img/icon-instagram.png' %}" alt="">
+                </a>
+                
+                <a href="" class="link">
+                    <img class="logo-footer" src="{% static 'img/icon-whatsapp.png' %}" alt="">
+                </a>
+                
+               
+    
+                <div class="footer row " style=" width: auto; margin: 1rem auto;">
+                    <div class="col-12 text-center" >
+                        <a href="{% url 'index' %}" class="link footer-text">INICIO</a>
+                    </div>
+                            
+                    <div class="col-12 ">
+                        <a href="{% url 'galeria' %}" class="link footer-text">PRODUCTOS</a>
+                    </div>
+                        
+                    <div class="col-12 ">
+                        <a href="{% url 'mision' %}" class="link footer-text">NOSOTROS</a>
+                    </div>
+                    
+                    <div class="col-12 ">
+                        <a href="{% url 'index' %}" class="link footer-text">CONTACTO</a>
+                    </div>
+                    
+                    <div class="col-12 ">
+                        <a href="{% url 'index' %}" class="link  footer-text">UBICACION</a>
+                    </div>
+                </div>
+                <p class="m-0 copyright-text">Copyright © 2023 Paz&Flora - All rights reserved.</p>
+            </div>
+    </div>
+        <!-- FIN FOOTER-->
+    
+    
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    
+</body>

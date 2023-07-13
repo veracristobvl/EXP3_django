@@ -62,11 +62,12 @@
 </head>
 <body>
 
-    
 
-    <div class="container">
-        <h2>Crear Producto</h2>
+    {% include "navbar.html" %}    
+
+    <div class="container" style="display: flex; justify-content: center; margin-top: 2rem;">
         <form method="POST" id="formulario" enctype="multipart/form-data">
+            <h2>Crear Producto</h2>
             {% csrf_token %}
             <div class="row">
                 <label for="{{ productoform.field.name}}">
@@ -119,5 +120,7 @@
             <a href="{% url 'index' %}" class="btn btn-primary">Inicio</a>
         </form>
     </div> 
+    {% include "footer.html" %}
+
 </body>
 </html>

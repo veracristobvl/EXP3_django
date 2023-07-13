@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <title>Vehiculos</title>
+    <title>Productos</title>
 </head>
 <body>
+    
+    {% include "navbar.html" %}
     <div class="container">
-        <h2> Vehiculos </h2>
+        <h2> Productos </h2>
 
         <table class="table">
             <thead>
@@ -42,7 +44,7 @@
                         <p style="color:red">No tiene foto</p>
                     </td>
                     {% endif %}
-                    <td><a href="{% url 'eliminar' producto.codigoID %}" class="btn btn-danger">Eliminar</td>
+                    <td><a  href="{% url 'eliminar' producto.codigoID %}" class="btn btn-danger">Eliminar</td>
                     <td><a href="{% url 'modificar' producto.codigoID %}" class="btn btn-warning">Modificar</td>                        
                 </tr>
                 {%endfor%}
@@ -53,6 +55,7 @@
     </div>
 
 
+    {% include "footer.html" %}
     
 </body>
 </html>

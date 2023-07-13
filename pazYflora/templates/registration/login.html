@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    
+    <script src="{% static 'JavaScript/validate.js' %}"></script>
+    <script src="{% static 'JavaScript/main.js' %}"></script>
+    <title>Login</title>
+    <style>
+        label.error{
+            color:red;
+            font: size 0.8em;
+            width: 200px;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#formulario").validate({
+                rules:{
+                    username:"required",
+                    password1: {
+                        minlength: 5
+                    },
+                    password2: {
+                        minlength: 5,
+                        equalTo: "#password1"
+                    }
+                     
+
+                },
+                messages:{
+                    username:{
+                        required:'Ingresa un nombre de usuario',
+                    },
+                    first_name:{
+                        required:'Ingresa tu Nombre',
+                    },
+                    last_name:{
+                        required:'Ingrese tu Apellido',
+                    },
+                    email:{
+                        required:'Ingrese tu Email',
+                    },
+                    password1:{
+                        required:'Ingresa una Contraseña',
+                    },
+                    password2:{
+                        required:'Reingresa tu Contraseña',
+                        equalTo: 'Contraseña debe coincidir con la anterior'
+                    },
+                }
+            })
+            
+        })
+    </script>
+</head>
+<body style="min-height: 100vh;  display: flex;
+    flex-direction: column;">
+
+    {% load crispy_forms_tags %}
+    <div class="container"style="margin: auto;">
+        <div class="" >
+            <div class="col-12 col-md-6 offset-md-3" >
+                <!-- <div class="card"> -->
+                    <div class="card-body">
+                        <form action="#" method="post" id="formulario">
+                            <div class="img-div">
+                                <img src="{% static 'img/logo.png' %}" alt="">
+                            </div> 
+                            <h2 class="text-center" style="margin-top: 0rem;">Ingresa tus credenciales</h2>
+                            {% csrf_token %}
+                            {{ form| crispy }}
+                            <input type="submit" value="INGRESAR" class="btn btn-success" style="float:right">
+                            <a href="{% url 'index' %}">Ir a Inicio</a>
+                            <span style="font-weight: bold;">¿Aún no tienes una cuenta?</span> <a class="form-text-span" href="{% url 'registrar' %}">Registrarse</a>
+                        </form>
+
+                    </div>
+                    
+                <!-- </div> -->
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<!-- | crispy -->
