@@ -74,15 +74,13 @@ class RegistroUserForm(UserCreationForm):
                     'placeholder' : 'Ingrese Contraseña',
                     'class' : '',
                     'id' : 'password1',
-                    'required': True
                 }
             ),
             'password2' : forms.TextInput(
                 attrs={
                     'placeholder' : 'Reingrese Contraseña',
                     'class' : '',
-                    'id' : 'contraseña2',
-                    'required': True
+                    'id' : 'password2',
                 }
             ),
             
@@ -95,8 +93,8 @@ class RegistroUserForm(UserCreationForm):
         self.fields['email'].label = 'Email'
         self.fields['password1'].label = 'Contraseña'
         self.fields['password2'].label = 'Reingresa  Contraseña'
-        for fieldname in ['username', 'password1', 'password2']:
-            self.fields[fieldname].help_text = None
+        # for fieldname in ['username', 'password1', 'password2']:
+        #     self.fields[fieldname].help_text = None
 
 class ProductoForm(ModelForm):
     class Meta:
