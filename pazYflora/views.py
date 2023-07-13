@@ -133,14 +133,14 @@ def generarBoleta(request):
         'fecha':boleta.fechaCompra,
         'total': boleta.total
     }
+    # for producto in productos:
+    #     productoModificado = Producto.objects.get(codigoID = producto.id_producto)
+    #     productoModificado.stock = productoModificado.stock - producto.cantidad 
+    #     productoModificado.save()
     request.session['boleta'] = boleta.id_boleta
     carrito = Carrito(request)
     carrito.limpiar()
 
-    for producto in productos:
-        productoModificado = Producto.objects.get(codigoID = producto.id_producto)
-        productoModificado.stock = productoModificado.stock - producto.cantidad 
-        productoModificado.save()
     
 
     return render(request, 'index.html',datos)
